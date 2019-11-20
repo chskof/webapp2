@@ -1,0 +1,86 @@
+@CHARSET "UTF-8";
+body {
+	font-family: 宋体, Arial, sans-serif;
+	font-size: 14px;
+	font-weight: normal;
+	font-style: normal;
+	text-align: center;
+	background-color: #F8F8F8;
+	padding-top: 20px;
+}
+.input-table {
+	border: 1px solid #bfbfbf;
+	border-collapse: collapse;
+	font-size: 13px;
+	width: 100%;
+}
+.input-table tr th {
+	font-size: 13px;
+	font-weight:normal;
+	height: 30px;
+	line-height: 1.4285;
+	width: 10%;
+	vertical-align: middle;
+	text-align: left;
+	border: 1px solid #bfbfbf;
+	padding-left: 3px;
+	background-color: #E9E9E9;
+}
+.input-table td {
+	font-size: 13px;
+	height: 30px;
+	line-height: 1.4285;
+	vertical-align: middle;
+	border: 1px solid #bfbfbf;
+	padding-left:6px;
+	padding-top: 2px;
+	padding-bottom: 2px;
+	text-align: left;
+}
+.input-table td input[type='text'] {
+	line-height: 1.4285;
+	padding-top: 3px;
+	padding-bottom: 3px;
+	font-size: 13px;
+	vertical-align: middle;
+}
+.input-table td select {
+	line-height: 1.4285;
+	padding: 3px 6px;
+	font-size: 13px;
+	vertical-align: middle;
+}
+.input-table td textarea {
+	line-height: 1.4285;
+	padding: 3px;
+	font-size: 13px;
+	vertical-align: middle;
+}
+.input-table td .short-width {
+	width: 70%;
+}
+.input-table td .long-width {
+	width: 96%;
+}
+.btn {
+	height: 30px;
+	line-height: 30px;
+	color: #FFFFFF;
+	font-size:14px;
+	border: 0px;
+	background-color: #0D65AF;
+	border-radius: 2px;
+	cursor: pointer;
+}
+.orgbtn {
+	height: 26px;
+	font-size:13px;
+	cursor: pointer;
+	margin-left: 6px;
+}
+.btnBar{
+	padding: 5px;
+}
+em {
+    color: #F00;
+}

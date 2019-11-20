@@ -1,0 +1,34 @@
+TABLE {
+	FONT-SIZE: 12px
+}
+
+.logsdiv {
+	width: 100%;
+	text-align: left;
+	margin-top: 10px;
+}
+
+.logsdiv img {
+	cursor: pointer;
+}
+
+.logsdiv span {
+	margin-left: 5px;
+}
+
+.logstable {
+	text-align: left;
+	border-collapse: collapse; 
+	margin-left:15px;
+}
+
+.logstable td {
+	line-height: 25px;
+	padding-left:3px;
+	width:100%;
+}
+
+.logstable .logstable1 {
+	background-color: #DDE9FF;
+	width: 100%;
+}
