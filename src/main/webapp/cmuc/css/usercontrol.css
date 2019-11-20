@@ -1,0 +1,57 @@
+BODY {
+	MARGIN: 0px;
+	FONT-SIZE: 12px
+}
+
+TABLE {
+	FONT-SIZE: 12px;
+	border-collapse: collapse;
+}
+
+#backg {
+	background-image: url("../img/opentb.gif");
+	background-repeat: repeat-x;
+	height: 20px;
+	width: 100%;
+}
+
+.button {
+	background-color: #EEEEEE;
+	border: 1px solid #330066;
+	font-size: 12px;
+	height: 21px;
+	padding: 2px 4px 0;
+}
+
+.divHead {
+	height: 28px;
+	line-height: 28px;
+	font-weight: bold;
+}
+
+.divcontent {
+	border: 2px inset;
+	width: 222px;
+	margin-left: 2px;
+	height: 310px;
+	_height: 310px;
+	overflow-y: auto;
+	overflow-X: hidden;
+}
+
+#Selectdiv a {
+	color: #000;
+	text-decoration: none;
+	width: 222px;
+	float: left;
+	padding-left: 3px;
+	line-height: 16px;
+}
+
+.aselect {
+	background-color: #D4D0C8;
+}
+
+#Selectdiv a:hover {
+	background-color: #E4EEF6
+}

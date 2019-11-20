@@ -1,0 +1,144 @@
+
+
+.logsheaddiv {
+	text-align: left;
+	margin-top: 10px;
+	font-size: 13px;
+	border: solid 1px #A0B5CA;
+	height:25px;
+	background: url(../img/lmhead.gif) repeat-x;
+	width: 100%;
+}
+
+.logsheaddiv span {
+	height: 24px;
+	margin-left: 5px;
+	line-height: 24px;
+	color: #054390;
+	font-weight: bold;
+	font-size: 12px;
+	float: left;
+}
+
+
+
+.logsbodydiv {
+	text-align: center;
+	border-left: solid 1px #A0B5CA;
+	border-right: solid 1px #A0B5CA;
+	border-bottom: solid 1px #A0B5CA;
+	margin-bottom: 5px;
+	padding: 0px;
+	width: 100%;
+}
+
+.logsbtndiv {
+	margin-top:3px;
+	float: right;
+	margin-right: 20px;
+	height: 20px;
+	line-height: 20px;
+	cursor: pointer;
+    width:98px;
+    text-align:center;
+    color:white;
+	background: url(../img/btnlong.gif) no-repeat;
+}
+
+.logstable {
+	FONT-SIZE: 12px;
+	align: center;
+	width: 100%;
+	border-collapse: collapse;
+	width: 100%;
+	text-align: left;
+}
+
+.logstable td{
+	padding: 2px 2px;
+	height:26px;
+	border: #bfbfbf 1px solid;
+}
+
+.logstable th {
+	font-weight: bold;
+	background-color: #DDE9FF;
+	height: 28px;
+	border: #bfbfbf 1px solid;
+}
+
+.headtr{
+	width: 100%;
+}
+.logstr1 {
+	background-color:#f6f6f6;
+}
+
+.logstr0 {
+	background-color:#ffffff;
+}
+
+.lgpt{
+	width: 13%;
+}
+.logstable .lgpt0{
+	width: 13%;
+	border-left: 4px solid  #2380C2;
+}
+.logstable .lgpt1{
+	width: 13%;
+	border-left: 4px solid  #F5B846;
+}
+.logstable .lgpt2{
+	width: 13%;
+	border-left: 4px solid  #73C266;
+}
+
+.lghj{
+	width: 12%;
+}
+
+.lgspr{
+	width: 6.5%;
+}
+
+.lgsj{
+	width: 10%;
+}
+
+.lgtl{
+	width: 6%;
+}
+
+.lglc{
+	width: 6.8%;
+}
+
+.lgjc{
+	width: 12%;
+}
+
+.lgyj{
+	width: 33.7%;
+}
+
+
+
+
+
+
+.logsleaddiv {
+	width: 100%;
+}
+.logslinediv{
+	width:100%;
+	text-align:left;
+	padding:1 0 1 4;
+	color: black;
+}
+
+
+
+
+
+

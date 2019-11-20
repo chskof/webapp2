@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" ?>  
+<!DOCTYPE mapper PUBLIC "-//ibatis.apache.org//DTD Mapper 3.0//EN"      
+ "http://ibatis.apache.org/dtd/ibatis-3-mapper.dtd">
+
+<mapper namespace="com.chen.dao.IFirstDao">
+
+	<select id="FindById" parameterType="long" resultType="com.chen.model.Contact">
+		select
+		ID as id,
+		NAME as name,
+		AGE as age,
+		PHONE as phone,
+		ADDRESS as address
+		from
+		CONTACT
+		where
+		ID = #{id}
+	</select>
+
+
+
+</mapper>
+
+
+
+
+
+
+
