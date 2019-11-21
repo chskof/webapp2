@@ -8,9 +8,15 @@
 		select
 		ID as id,
 		NAME as name,
-		AGE as age,
 		PHONE as phone,
-		ADDRESS as address
+		ADDRESS as address,
+		NAME_SPELL as nameSpell,
+		BIRTHDAY as birthday,
+		WEIXIN as weixin,
+		QQ as QQ,
+		MARK1 as mark1,
+		MARK2 as mark2,
+		MARK3 as mark3
 		from
 		CONTACT
 		where
