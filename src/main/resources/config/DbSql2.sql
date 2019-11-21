@@ -37,7 +37,7 @@ CREATE TABLE `contact`  (
 ) ENGINE = InnoDB AUTO_INCREMENT = 1 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Compact;
 
 SET FOREIGN_KEY_CHECKS = 1;
-
+ALTER TABLE `contact` COMMENT  = '联系人信息表';
 
 
 /*
@@ -86,23 +86,11 @@ CREATE TABLE `family_person`  (
   `experience` varchar(2000) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL COMMENT '个人详细资料',
   `farther_id` int(11) NULL DEFAULT NULL COMMENT '父亲id',
   `father_name` varchar(128) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL COMMENT '父亲名字',
-  `spouse_info` varchar(1000) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL COMMENT '配偶信息',
-  `sopuse_birthday` varchar(255) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL COMMENT '配偶生辰',
-  `spouse_deathday` varchar(255) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL COMMENT '配偶殁日',
-  `spouse_cemetery` varchar(255) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL COMMENT '配偶墓葬',
-  `sons` varchar(1000) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL COMMENT '儿子信息',
-  `daughter` varchar(1000) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL COMMENT '女儿信息',
-  `mark1` varchar(255) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL COMMENT '备用1',
-  `mark2` varchar(255) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL COMMENT '备用2',
-  `mark3` varchar(255) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL COMMENT '备用3',
-  `mark4` int(11) NULL DEFAULT NULL COMMENT '备用4',
-  `mark5` int(11) NULL DEFAULT NULL COMMENT '备用5',
-  `mark6` datetime NULL DEFAULT NULL COMMENT '备用6',
   PRIMARY KEY (`id`) USING BTREE
 ) ENGINE = InnoDB AUTO_INCREMENT = 1 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Compact;
 
 SET FOREIGN_KEY_CHECKS = 1;
-
+ALTER TABLE `family_person` COMMENT  = '家族成员表';
 
 
 
@@ -134,6 +122,7 @@ CREATE TABLE `kinsfolk_relation`  (
   `person_id` int(11) NULL DEFAULT NULL COMMENT '户主id',
   `relation` int(1) NULL DEFAULT NULL COMMENT '关系',
   `name` varchar(255) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL COMMENT '姓名',
+  `son_id` int(11) NULL DEFAULT NULL COMMENT '后代id(补填)',
   `calen_birthday` date NULL DEFAULT NULL COMMENT '生辰',
   `lunr_birthday` varchar(255) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL COMMENT '公历生日',
   `calen_deathday` date NULL DEFAULT NULL COMMENT '殁日',
@@ -141,15 +130,11 @@ CREATE TABLE `kinsfolk_relation`  (
   `address` varchar(255) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL COMMENT '地址',
   `phone` varchar(20) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL COMMENT '电话',
   `orther_info` varchar(1000) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL COMMENT '其他信息',
-  `extend1` varchar(255) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL COMMENT '备用1',
-  `extend2` varchar(255) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL COMMENT '备用2',
-  `extend3` varchar(256) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL COMMENT '备用3',
-  `extend4` int(11) NULL DEFAULT NULL COMMENT '备用4',
   PRIMARY KEY (`id`) USING BTREE
 ) ENGINE = InnoDB AUTO_INCREMENT = 1 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Compact;
 
 SET FOREIGN_KEY_CHECKS = 1;
-
+ALTER TABLE `kinsfolk_relation` COMMENT  = '成员家属表';
 
 
 
