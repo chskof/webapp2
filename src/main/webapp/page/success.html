@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript" src="../common/js/jquery-1.8.3.min.js"></script>
+<script type="text/javascript">
+	$(function(){
+		//查询
+		 $.ajax({
+             type: "post",
+             url:"find.do",
+             data: {},
+             dataType: "json",
+             success: function(data){
+                        console.log(data);
+                        var td_id = $("<td>"+ data.id +"</td>");
+                        var td_name = $("<td>"+ data.name +"</td>");
+                        var td_phone = $("<td>"+ data.phone +"</td>");
+                        var td_birthday = $("<td>"+ getDate(data.birthday) +"</td>");
+                        
+                        var tr = $("<tr></tr>");
+                        tr.append(td_id);
+                        tr.append(td_name);
+                        tr.append(td_phone);
+                        tr.append(td_birthday);
+                        
+                        $("#tb").append(tr);
+                        
+                      },
+             error:  function(){
+            		    alert("error")
+                     }	
+                      
+         });
+		
+	});
+	
+	
+	function getDate(time){
+		var date = new Date(time);
+		var year = date.getFullYear();
+		var month = date.getMonth()+1;
+		var day = date.getDate();
+		return year+"-"+month+"-"+day;
+	}
+</script>
+</head>
+<body>
+	<form action="" method="post">
+		<table style="width:70%;margin:0 auto;">
+			<colgroup>
+				<col width="10%">
+				<col width="">
+				<col width="25%">
+				<col width="25%">
+			</colgroup>
+			<thead>
+					<td>编号</td>
+					<td>姓名</td>
+					<td>电话</td>
+					<td>生日</td>
+			</thead>
+			<tbody id="tb">
+				
+			</tbody>
+		</table>
+	</form>
+</body>
+</html>

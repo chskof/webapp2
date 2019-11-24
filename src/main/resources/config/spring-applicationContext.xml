@@ -76,9 +76,9 @@
 	<!-- 视图解析器 解析jsp解析，默认使用jstl标签 ,classpath下的有jstl的包 -->
 	<bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
 		<!-- 配置jsp路径的前缀 -->
-		<property name="prefix" value="/WEB-INF/jsp/" />
+		<property name="prefix" value="/page/" />
 		<!-- 配置jsp路径的后缀 -->
-		<property name="suffix" value=".jsp" />
+		<property name="suffix" value=".html" />
 	</bean>
 
 
@@ -94,7 +94,7 @@
 	</bean> 
 	-->
  
-	<!-- 配置校验器 -->
+	
 	<!-- 
 	<bean id="validator"
 		class="org.springframework.validation.beanvalidation.LocalValidatorFactoryBean">
@@ -103,10 +103,9 @@
 			value="org.hibernate.validator.HibernateValidator" />
 		指定校验使用的资源文件，在文件中配置校验错误信息，如果不指定则默认使用classpath下面的ValidationMessages.properties文件
 		<property name="validationMessageSource" ref="messageSource" />
-	</bean> -
-	->
+	</bean>
+	-->
 	
-	<!-- 校验错误信息配置文件 -->
 	<!-- 
 	<bean id="messageSource"
 		class="org.springframework.context.support.ReloadableResourceBundleMessageSource">
@@ -120,8 +119,8 @@
 		<property name="defaultEncoding" value="utf-8" />
 		对资源文件内容缓存时间，单位秒
 		<property name="cacheSeconds" value="120" />
-	</bean> -
-	->
+	</bean> -->
+	
 	<!-- 全局异常处理器 只要实现HandlerExceptionResolver接口就是全局异常处理器 -->
 	<!-- 
 	<bean class="com.wffanshao.exception.CustomExceptionResolver"></bean>
