@@ -9,7 +9,7 @@ import org.springframework.web.servlet.ModelAndView;
 import com.chen.model.Contact;
 import com.chen.service.IFirstService;
 
-@RequestMapping("/contact/")
+@RequestMapping("/contact")
 @Controller
 public class ContactController {
 	@Autowired
