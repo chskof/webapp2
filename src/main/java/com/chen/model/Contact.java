@@ -2,7 +2,6 @@ package com.chen.model;
 
 import java.io.Serializable;
 import java.util.Date;
-import java.util.List;
 
 public class Contact implements Serializable {
 	private Long id;
@@ -17,10 +16,10 @@ public class Contact implements Serializable {
 	private Long mark2;
 	private Date mark3;
 	
-	public long getId() {
+	public Long getId() {
 		return id;
 	}
-	public void setId(long id) {
+	public void setId(Long id) {
 		this.id = id;
 	}
 	public String getName() {
@@ -79,10 +78,10 @@ public class Contact implements Serializable {
 	public void setMark3(Date mark3) {
 		this.mark3 = mark3;
 	}
-	public long getQQ() {
+	public Long getQQ() {
 		return QQ;
 	}
-	public void setQQ(long qQ) {
+	public void setQQ(Long qQ) {
 		QQ = qQ;
 	}
 }
